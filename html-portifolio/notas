@@ -1,0 +1,31 @@
+Seletores CSS
+
+ancestral descendente
+li p  --- seleciona todos  <p>  depois do <li> recursivamente.
+
+irmão ~ irmão
+li ~ li  --- seleciona todos os <li> depois do primeiro <li> . Somente irmao!!! nao entra dentro dos elementos
+
+irmão + irmão seguinte
+li + p  --- seleciona o primeiro <p>  depois do  <li> . Somente irmao!!! nao entra dentro dos elementos
+
+pai > filho
+li p  --- seleciona todos <p>  dentro do  <li>. So pega os filhos!!!Nao entra tão recursivamente
+
+
+pseudoclasses --espaco faz diferenca!! cuidado
+
+tr:nth-child(even) -- Pega os pares, porem a contagem vai para os elementes do body
+tr:nth-of-type(even) -- Pega os pares do elemento tr
+tr:nth-child(3) -- Pega a terceira linha
+tr:nth-child(2n+1) -- Pula de dois em dois, comecando do primeiro(pega os impares)
+
+.botao:hover -- Outra pseudo classe, ativa quando o mouse esta em cima
+
+
+Pseudoelementos
+p::first-letter -- Primeira leta do <p>
+
+blockcode::before{content"'"';} -- Coloca uma aspas no começo do elemento.
+
+blockcode::after{content"'"';}  -- Coloca uma aspas no final do elemento.
